@@ -1,0 +1,20 @@
+div {
+  width: 200px;
+  height: 200px;
+}
+
+body {
+  display: flex;
+  gap: 40px;
+}
+
+.firstDiv {
+  background-color: red;
+}
+
+.secondDiv {
+  background-color: yellow;
+}
+.thirdDiv {
+  background-color: green;
+}
