@@ -1,0 +1,28 @@
+div {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: blue;
+}
+
+body {
+  display: flex;
+  gap: 40px;
+}
+
+.firstDiv {
+  background-color: red;
+  border: 10px solid green;
+}
+
+.secondDiv {
+  background-color: yellow;
+  border: 10px solid red;
+}
+.thirdDiv {
+  background-color: green;
+  border: 10px solid yellow;
+}
