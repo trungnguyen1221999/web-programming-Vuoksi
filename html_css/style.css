@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h1 {
+  color: rgb(10, 243, 10);
+  transition: 0.3s;
+}
+
+h1:hover {
+  scale: 1.2;
+  opacity: 0.8;
+}
