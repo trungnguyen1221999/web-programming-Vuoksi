@@ -3,18 +3,192 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Trung Nguyen</title>
   </head>
   <body>
-    <div class="container">
-      <nav>
-        <h2>Trung Nguyen</h2>
+    <header>
+      <div class="headerFull">
+        <div class="container">
+          <nav>
+            <h2 class="logo"><a href="home.html">Trung Nguyen</a></h2>
+            <ul class="nav-list">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="container">
+        <div class="hero">
+          <div class="hero-left">
+            <img src="./Untitled design.png" alt="" />
+          </div>
+          <div class="hero-right">
+            <h2>About Me</h2>
+            <p>
+              Hi there! <strong>I’m Nguyen Anh Trung</strong>, a 26-year-old
+              code-wrangler currently studying programming at Vuoksi.
+              <br /><br />Before diving into the world of loops and bugs, I
+              spent 5 years wrestling with the wild beast known as eCommerce —
+              and somehow survived. <br /><br />I love travel, because sometimes
+              my code needs a break… and so do I. If life were a program, I’d
+              say I’m still in the beta version, but with plenty of exciting
+              updates coming soon!
+            </p>
+            <div class="abt">
+              <img src="./programing.png" alt="" />
+              <img src="./ecommerceS.png" alt="" />
+              <img src="./travel.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="skill">
+      <div class="container">
+        <h2>My Skills</h2>
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a>About</a></li>
-          <li><a>Contact</a></li>
+          <li>
+            <img src="./html.png" alt="" />
+            <p>Html</p>
+          </li>
+          <li>
+            <img src="css.png" alt="" />
+            <p>Css</p>
+          </li>
+          <li>
+            <img src="react.png" alt="" />
+            <p>JavaScripts</p>
+          </li>
+          <li>
+            <img src="js.png" alt="" />
+            <p>React</p>
+          </li>
+          <li>
+            <img src="ecommerce.png" alt="" />
+            <p>eCommerce</p>
+          </li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </section>
+    <section class="project">
+      <div class="container">
+        <h2>My Work</h2>
+        <img src="Näyttökuva 2025-08-13 101611.png" alt="" />
+        <div class="des">
+          <strong>
+            <p class="oma">
+              I’m also the founder of   OmaCustom.fi, a brand I
+              started back in 2024.
+            </p>
+          </strong>
+          <p>
+            At OmaCustom.fi, I create personalized products that turn everyday
+            items into something
+            <i>unique, fun, and totally <strong>“you”</strong></i
+            >.
+          </p>
+          <p>
+            I built this brand from scratch because I wanted to combine my love
+            for creativity, tech, and helping people express themselves. Every
+            product has a little bit of me in it — from the idea to the final
+            design.
+          </p>
+          <p>
+            When I’m not coding or shipping custom goodies, I love traveling and
+            finding inspiration for the next quirky product idea.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="hobby">
+     <div class="container">
+        <div class="hobby">
+          <h2>Hobbies</h2>
+          <div class="hobbies-menu">
+              <p class="active">Movie</p>
+              <p>Pet</p>
+              <p>Travel</p>
+          </div>
+              <div class="movie">
+                
+                <div class="desHobby">
+                 <div class="desimg"> <img src="movie.png" alt=""></div>
+
+
+                  <strong><p>Movies are for reflection and appreciation</p></strong>
+                  <p>I enjoy films that are deep and meaningful, the kind that linger in your mind long after you’ve left the theater, not just ones that serve as momentary entertainment. These stories are often quiet, never trying to force emotions, but gently guiding the audience through layers of meaning and subtle details. When the credits roll, something still stays with you.</p>
+                </div>
+              </div>
+
+              <div class="pet">
+                
+                <div class="desHobby hide">
+                  <div class="desimg"><img src="pet.png" alt=""></div>
+                  <strong><p>Pets always make me feel happier and lighter.</p></strong>
+                  <p>Pets are always loyal, trustworthy companions who bring simple joys and unconditional love, making everyday life warmer. Caring for a pet is not just about looking after an animal—it teaches patience, love, and appreciation for the small but meaningful moments.</p>
+                </div>
+              </div>
+
+              <div class="travel">
+                
+                <div class="desHobby hide">
+                  <div class="desimg"><img src="travel2.png" alt=""></div>
+                  <strong><p>Traveling is always a wonderful time to explore the world and enjoy memorable moments.</p></strong>
+                  <p>What makes each trip truly special is going with family and friends – laughing together, experiencing new things, and creating unforgettable memories. Every destination brings a fresh feeling, but the real joy comes from sharing moments and connecting with the people you love.</p>
+                </div>
+              </div>
+        </div>
+     </div>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <h2>Contact me</h2>
+        <div class="contactMe">
+          <form action="">
+            <div class="name-email">
+              <input class="name" type="text" placeholder="Name" />
+              <input class="email" type="text" placeholder="Email" />
+            </div>
+            <input class="phone" type="text" placeholder="Phone Number" />
+            <input class="comment" type="text" placeholder="Comment" />
+            <button>Submit</button>
+          </form>
+          <div class="contact-right"><img  src="contact.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="info"><h2 class="logo"><a href="home.html">Trung Nguyen</a></h2>
+        <div>
+          <ul>
+            <li><strong>Nice to meet you all</strong></li>
+            <li ><strong>Email:</strong> <a href="mailto:trungnguyen1221999@gmail.com" class="sendEmail">trungnguyen1221999@gmail.com</a></li>
+            <li><strong>Phone:</strong> 0123456</li>
+            
+          </ul>
+        </div>
+        </div>
+        <div class="connect">
+          <h3>Connect with me</h3>
+          <ul class="social">
+            <li><a href="www.facebook.com"><img src="fb.png" alt=""></a></li>
+            <li><a href="www.instagram.com"><img src="insta.png" alt=""></a></li>
+            <li><a href="www.whatsapp.com"><img src="whatsapp.png" alt=""></a></li>
+          </ul>
+        </div>
+     
+      </div>
+    </footer>
+    <script src="main.js"></script>
   </body>
 </html>

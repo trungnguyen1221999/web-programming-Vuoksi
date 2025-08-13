@@ -1,0 +1,338 @@
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Mozilla Text", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+header {
+  margin-bottom: 50px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.container {
+  padding: 20px 100px;
+}
+h2 {
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.nav-list a {
+  color: rgb(148, 17, 148);
+}
+.nav-list li:hover {
+  scale: 0.9;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+.logo:hover {
+  scale: 0.9;
+  transition: 0.3s;
+  opacity: 0.7;
+}
+
+.headerFull {
+  width: 100%;
+  background-color: rgb(180, 180, 255);
+}
+
+.hero {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.hero img {
+  object-fit: cover;
+  width: 750px;
+  overflow: hidden;
+}
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.hero-right img {
+  object-fit: cover;
+  width: 200px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.hero-right img:hover {
+  scale: 1.2;
+  opacity: 0.9;
+}
+.abt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.skill img {
+  object-fit: cover;
+  width: 200px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.skill h2 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(148, 17, 148);
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.skill ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.skill img:hover {
+  transform: translateY(-30px);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.skill {
+  width: 100%;
+  background-color: rgb(180, 180, 255);
+  margin-bottom: 50px;
+  padding-bottom: 40px;
+}
+
+.project img {
+  object-fit: cover;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.project h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.project .des {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.oma {
+  display: flex;
+  justify-content: center;
+  color: rgb(148, 17, 148);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.project {
+  margin-bottom: 50px;
+}
+
+.contact {
+  width: 100%;
+  background-color: rgb(180, 180, 255);
+  margin-bottom: 50px;
+  padding-bottom: 40px;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  gap: 15px;
+}
+
+.contact-right img {
+  width: 500px;
+}
+
+.contactMe {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 10px 5px;
+  border: 1px solid;
+}
+
+.name-email {
+  display: flex;
+  gap: 20px;
+}
+input:hover,
+input:active {
+  opacity: 0.8;
+  background-color: rgb(255, 223, 255);
+}
+
+.contact button {
+  padding: 15px 0;
+  color: white;
+  background-color: rgb(148, 17, 148);
+  border-radius: 8px;
+  transition: 0.5s;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.contact button:hover {
+  scale: 0.95;
+  opacity: 0.7;
+}
+
+.contact h2 {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.hobby {
+  margin-bottom: 30px;
+}
+.hobby h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.hobbies-menu {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+.hobbies-menu p {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  padding: 5px 20px;
+  border: 1px solid black;
+  font-weight: bold;
+  background-color: rgb(180, 180, 255);
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.hobbies-menu p:hover,
+.hobbies-menu p:active {
+  color: white;
+  background-color: rgb(148, 17, 148);
+}
+
+.desHobby {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  background-color: rgb(148, 17, 148);
+  padding: 20px;
+  border-radius: 5px 10px;
+  line-height: 4rem;
+  height: 400px;
+}
+
+.active {
+  color: white;
+  background-color: rgb(148, 17, 148) !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.desimg {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  height: 100px;
+}
+
+.invalid {
+  border: 1px solid red !important;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+.social li:hover {
+  transform: translateY(-15px);
+  transition: 0.5s;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+.connect h3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.info ul {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer {
+  margin: 20px 0 40px;
+}
+button {
+  cursor: pointer;
+}
+.sendEmail {
+  color: rgb(148, 17, 148);
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
