@@ -5,6 +5,7 @@ import Margin from "../assets/Margin";
 import Skills from "../assets/Skills";
 import Works from "../assets/Works";
 import Hobbies from "../assets/Hobbies";
+import ContactSection from "../assets/ContactSection";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Skills />
       <Works />
       <Hobbies />
+      <ContactSection />
     </div>
   );
 };

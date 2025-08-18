@@ -12,7 +12,7 @@ const Hobbies = () => {
       <StyledSection>
         {data.home.hobbies.section.map((item, index) => (
           <HobbyButton
-            active={activeIndex === index}
+            $active={activeIndex === index}
             key={index}
             onClick={() => setActiveIndex(index)}
           >
@@ -28,7 +28,7 @@ const Hobbies = () => {
 
           <p>{data.home.hobbies.description.title[activeIndex]}</p>
 
-          <p> {data.home.hobbies.description.detail[activeIndex]}</p>
+          <p>{data.home.hobbies.description.detail[activeIndex]} </p>
         </StyledHobbiesDetail>
       </div>
     </Container>
@@ -38,9 +38,9 @@ const Hobbies = () => {
 export default Hobbies;
 const HobbyButton = styled.div`
   font-weight: bold;
-  background-color: ${({ active }) =>
-    active ? theme.colors.primary : "white"};
-  color: ${({ active }) => (active ? "white" : theme.colors.primary)};
+  background-color: ${({ $active }) =>
+    $active ? theme.colors.primary : "white"};
+  color: ${({ $active }) => ($active ? "white" : theme.colors.primary)};
   border: 1px solid ${theme.colors.primary};
   width: 100px;
   padding: 10px 20px;

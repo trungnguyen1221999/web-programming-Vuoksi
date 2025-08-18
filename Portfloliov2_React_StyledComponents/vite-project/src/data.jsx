@@ -64,7 +64,7 @@ const data = {
       description: (
         <div>
           <strong>
-            <p class="oma">
+            <p>
               I’m also the founder of OmaCustom.fi, a brand I started back in
               2024.
             </p>
