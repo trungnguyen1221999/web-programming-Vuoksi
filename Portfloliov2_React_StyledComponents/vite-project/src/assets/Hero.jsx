@@ -28,7 +28,7 @@ const StyledHero = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 60px;
+  padding: 40px 60px;
   gap: 120px;
   color: ${(props) => props.theme.colors.text};
 

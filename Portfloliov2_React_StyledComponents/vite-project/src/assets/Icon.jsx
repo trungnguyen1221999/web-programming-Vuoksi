@@ -16,7 +16,8 @@ export default Icon;
 const StyledImage = styled.img`
   width: 150px;
   object-fit: cover;
-  transition: all 0.6s ease-in-out;
+  transition: 0.6s !important;
+
   &:hover {
     transform: translateY(-20px);
     opacity: 0.9;
@@ -24,7 +25,7 @@ const StyledImage = styled.img`
   }
 `;
 
-const StyledIcon = styled.div`
+export const StyledIcon = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
