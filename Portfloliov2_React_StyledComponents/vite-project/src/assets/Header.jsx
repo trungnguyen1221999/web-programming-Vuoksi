@@ -63,7 +63,7 @@ const MobileNAv = styled.div`
   @media (max-width: 768px) {
     top: 0;
     left: 0;
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     height: 100vh;

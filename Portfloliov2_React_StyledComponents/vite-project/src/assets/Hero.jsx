@@ -23,7 +23,7 @@ const Image = styled.img`
   object-fit: cover;
   width: 550px;
   @media (max-width: 768px) {
-    width: 500px;
+    width: 400px;
   }
 `;
 
