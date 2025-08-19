@@ -37,6 +37,7 @@ const StyledSkills = styled.div`
   img {
     width: 150px;
     transition: 0.5s !important;
+    animation: spin 7s 0s linear infinite;
     @media (max-width: 768px) {
       width: 110px;
     }
@@ -44,7 +45,11 @@ const StyledSkills = styled.div`
   img:hover {
     opacity: 0.9;
     cursor: pointer;
-    scale: 1.25;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
   }
   .skills {
     display: flex;
@@ -60,6 +65,14 @@ const StyledSkills = styled.div`
       justify-content: center;
       align-items: center;
       padding: 30px;
+    }
+    @keyframes spin {
+      from {
+        rotate: 0;
+      }
+      to {
+        rotate: 360deg;
+      }
     }
   }
   @media (max-width: 768px) {
