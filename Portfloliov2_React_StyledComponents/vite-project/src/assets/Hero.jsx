@@ -7,8 +7,13 @@ import Icon from "./Icon";
 const Hero = () => {
   return (
     <StyledHero>
-      <Image src="/images/Untitled design.png" alt="" />
-      <div className="hero-right">
+      <Image
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        src="/images/Untitled design.png"
+        alt=""
+      />
+      <div className="hero-right" data-aos="fade-left" data-aos-duration="1500">
         <h2>{data.home.header.title}</h2>
         <div>{data.home.header.description}</div>
         <Icon />

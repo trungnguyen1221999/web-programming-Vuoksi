@@ -8,10 +8,19 @@ const Hobbies = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   return (
     <Container>
-      <StyledHeading>{data.home.hobbies.heading}</StyledHeading>
+      <StyledHeading
+        data-aos="zoom-in-up"
+        data-aos-duration="1500"
+        data-aos-offset="50"
+      >
+        {data.home.hobbies.heading}
+      </StyledHeading>
       <StyledSection>
         {data.home.hobbies.section.map((item, index) => (
           <HobbyButton
+            data-aos="flip-right"
+            data-aos-duration="1800"
+            data-aos-offset="100"
             $active={activeIndex === index}
             key={index}
             onClick={() => setActiveIndex(index)}
@@ -21,7 +30,11 @@ const Hobbies = () => {
         ))}
       </StyledSection>
       <div>
-        <StyledHobbiesDetail>
+        <StyledHobbiesDetail
+          data-aos="fade-down-right"
+          data-aos-duration="1800"
+          data-aos-offset="50"
+        >
           <StyledImages>
             <img src={data.home.hobbies.images[activeIndex]} alt="" />
           </StyledImages>

@@ -6,8 +6,15 @@ import theme from "./../Theme/theme";
 const Skills = () => {
   return (
     <StyledSkills>
-      <h2>{data.home.skills.heading}</h2>
-      <div className="skills">
+      <h2 data-aos="fade-up" data-aos-duration="1500" data-aos-offset="50">
+        {data.home.skills.heading}
+      </h2>
+      <div
+        className="skills"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-offset="50"
+      >
         <img src={data.home.skills.skillImage.html.src} alt="" />
         <img src={data.home.skills.skillImage.css.src} alt="" />
         <img src={data.home.skills.skillImage.js.src} alt="" />
@@ -37,7 +44,7 @@ const StyledSkills = styled.div`
   img {
     width: 150px;
     transition: 0.5s !important;
-    animation: spin 7s 0s linear infinite;
+    animation: spin 7s linear infinite;
     @media (max-width: 768px) {
       width: 110px;
     }

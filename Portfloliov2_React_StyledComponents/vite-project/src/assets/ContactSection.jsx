@@ -6,16 +6,33 @@ import theme from "./../Theme/theme";
 const ContactSection = () => {
   return (
     <Container>
-      <StyledHeading>CONTACT ME</StyledHeading>
+      <StyledHeading
+        data-aos="zoom-in-down"
+        data-aos-duration="1500"
+        data-aos-offset="100"
+      >
+        CONTACT ME
+      </StyledHeading>
       <StyledDiv>
-        <StyledForm action="">
+        <StyledForm
+          action=""
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          data-aos-offset="100"
+        >
           <input type="text" name="" id="" placeholder="Name" />
           <input type="text" name="" id="" placeholder="Email" />
           <input type="text" name="" id="" placeholder="Phone Number" />
           <input type="text" name="" id="" placeholder="Comment" />
           <button>SUBMIT</button>
         </StyledForm>
-        <img src="/images/contact.png" alt="" />
+        <img
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          data-aos-offset="100"
+          src="/images/contact.png"
+          alt=""
+        />
       </StyledDiv>
     </Container>
   );

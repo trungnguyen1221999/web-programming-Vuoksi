@@ -5,7 +5,11 @@ import styled from "styled-components";
 
 const Works = () => {
   return (
-    <StyledContainer>
+    <StyledContainer
+      data-aos="flip-up"
+      data-aos-duration="1500"
+      data-aos-offset="50"
+    >
       <StyledHeading>{data.home.works.headeing}</StyledHeading>
       <img src={data.home.works.image.src} alt="" />
       {data.home.works.description}
