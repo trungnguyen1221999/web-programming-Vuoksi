@@ -7,6 +7,7 @@ import { ThemeProvider } from "styled-components";
 import theme from "./Theme/theme";
 import GlobalStyle from "./GlobalStyle/GlobalStyles";
 import Container from "./assets/Container";
+import Footer from "./assets/Footer";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </ThemeProvider>
     </>
   );
