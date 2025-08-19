@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import About from "./../pages/About";
 
 const Nav = () => {
   return (
@@ -28,5 +29,8 @@ const StyledNav = styled.nav`
   a:hover {
     opacity: 0.8;
     scale: 0.9;
+  }
+  @media (max-width: 768px) {
+    display: none;
   }
 `;

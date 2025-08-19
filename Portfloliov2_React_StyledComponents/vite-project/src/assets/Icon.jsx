@@ -23,6 +23,9 @@ const StyledImage = styled.img`
     opacity: 0.9;
     cursor: pointer;
   }
+  @media (max-width: 768px) {
+    width: 110px;
+  }
 `;
 
 export const StyledIcon = styled.div`

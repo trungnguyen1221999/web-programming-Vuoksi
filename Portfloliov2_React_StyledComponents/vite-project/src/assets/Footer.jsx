@@ -46,6 +46,10 @@ const StyledContainer = styled(Container)`
   justify-content: space-between;
   align-items: center;
   color: #ffffff;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 const StyledFooter = styled.footer`
@@ -64,6 +68,10 @@ const StyledLeft = styled.div`
     cursor: pointer;
     opacity: 0.9;
     text-decoration: underline;
+  }
+  @media (max-width: 768px) {
+    align-items: center;
+    margin-bottom: 0;
   }
 `;
 

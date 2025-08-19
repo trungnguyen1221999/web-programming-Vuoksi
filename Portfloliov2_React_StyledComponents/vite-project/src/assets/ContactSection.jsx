@@ -40,6 +40,10 @@ const StyledDiv = styled.div`
     width: 400px;
     object-fit: cover;
   }
+  @media (max-width: 1024px) {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
 `;
 const StyledForm = styled.form`
   display: flex;
@@ -51,6 +55,9 @@ const StyledForm = styled.form`
     border-radius: 5px;
     outline: none;
     width: 800px;
+    @media (max-width: 1024px) {
+      width: 400px;
+    }
   }
   input:hover,
   input:focus,

@@ -22,6 +22,9 @@ export default Hero;
 const Image = styled.img`
   object-fit: cover;
   width: 550px;
+  @media (max-width: 768px) {
+    width: 500px;
+  }
 `;
 
 const StyledHero = styled.div`
@@ -31,7 +34,10 @@ const StyledHero = styled.div`
   padding: 40px 60px;
   gap: 120px;
   color: ${(props) => props.theme.colors.text};
-
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 50px;
+  }
   .hero-right {
     display: flex;
     flex-direction: column;
