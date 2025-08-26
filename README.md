@@ -4,8 +4,6 @@
 
 [**Live Demo**](https://splendid-marzipan-685b21.netlify.app/)  
 
-![Portfolio Preview](./screenshot.png)  
-*A simple portfolio practice project with scroll animations and hover effects*
 
 ---
 
