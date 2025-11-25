@@ -1,0 +1,26 @@
+JavaScript code<! DOCTYPE html>
+<html lang="en">
+<head>
+<title>First JavaScript Page</title>
+</head>
+<body>
+<h1>Welcome!</h1>
+<p id="greeting"></p>
+
+<script>
+// Create variables for first name and age
+const firstName = "Trung";
+const age = 26;
+
+// Calculate year of birth
+const currentYear = new Date().getFullYear();
+const yearOfBirth = currentYear - age;
+
+// Search for the HTML element with id 'greeting'
+const greetingElement = document.getElementById("greeting");
+
+// Write greeting in the element
+greetingElement.textContent = `Hi ${firstName}, you were born in ${yearOfBirth}.`;
+</script>
+</body>
+</html>
