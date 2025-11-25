@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Car Object Demo</title>
+        <style>
+            body {
+                background: #f4f6fb;
+                font-family: 'Segoe UI', Arial, sans-serif;
+                margin: 0;
+                padding: 40px 0;
+            }
+            .car-card {
+                background: #fff;
+                max-width: 350px;
+                margin: 40px auto;
+                border-radius: 16px;
+                box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+                padding: 28px 24px 24px 24px;
+                text-align: center;
+                position: relative;
+            }
+            .car-card img {
+                width: 100%;
+                max-height: 160px;
+                object-fit: cover;
+                border-radius: 12px;
+                margin-bottom: 18px;
+                background: #eaeaea;
+            }
+            .car-info {
+                font-size: 1.08em;
+                color: #333;
+                margin-bottom: 18px;
+            }
+            .car-status {
+                font-weight: bold;
+                color: #007bff;
+                margin-bottom: 12px;
+            }
+            .car-status.inactive {
+                color: #d32f2f;
+            }
+            .car-status.active {
+                color: #388e3c;
+            }
+            button {
+                padding: 10px 24px;
+                background: linear-gradient(90deg,#007bff,#00c6ff);
+                color: #fff;
+                border: none;
+                border-radius: 6px;
+                font-size: 1em;
+                cursor: pointer;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+                transition: background 0.2s;
+            }
+            button:hover {
+                background: linear-gradient(90deg,#0056b3,#007bff);
+            }
+        </style>
+</head>
+<body>
+
+    <div class="car-card">
+        <!-- Insert your car image below (update src as needed) -->
+        <img id="carImg" src="car.png" alt="Car Image" style="display:block">
+        <div id="carInfo" class="car-info"></div>
+        <div id="carStatus" class="car-status inactive"></div>
+        <button onclick="car.start()">Start Car</button>
+    </div>
+
+    <script>
+    // Car object with properties and start method
+    const car = {
+        make: "Toyota",
+        model: "Corolla",
+        modelYear: 2020,
+        inProgress: false,
+        start: function() {
+            this.inProgress = true;
+            updateCarInfo();
+            alert("Auto started");
+        }
+    };
+
+    // Returns car info as HTML
+    function getCarInfo() {
+        return `Make: <b>${car.make}</b><br>Model: <b>${car.model}</b><br>Year: <b>${car.modelYear}</b>`;
+    }
+
+    // Updates car info and status on page
+    function updateCarInfo() {
+        document.getElementById("carInfo").innerHTML = getCarInfo();
+        const statusEl = document.getElementById("carStatus");
+        if (car.inProgress) {
+            statusEl.textContent = "Status: Started";
+            statusEl.className = "car-status active";
+        } else {
+            statusEl.textContent = "Status: Stopped";
+            statusEl.className = "car-status inactive";
+        }
+    }
+
+    updateCarInfo();
+    </script>
+
+
+    
+</body>
+</html>
